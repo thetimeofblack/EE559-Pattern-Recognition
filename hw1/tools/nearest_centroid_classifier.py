@@ -10,11 +10,13 @@ def computeVectorEuclideanDistance(v1 ,v2):
 def nearest_centroid_classifier(test_data, sample_mean_label):
     result = []  
     for data in test_data:
-        minClass = 
-        minDistance = 0
+        minClass =  0 
+        minDistance = 99
         for mean in sample_mean_label:
             mean_feature_set = mean[:,[0,1]]
-            if(computeVectorEuclideanDistance(mean_feature_set,data)<minDistance):
-                minDistance = computeVectorEuclideanDistance(mean,data)
-                minClass = mean[2]
-                
+            if computeVectorEuclideanDistance(mean_feature_set,data)<minDistance :
+                 minDistance = computeVectorEuclideanDistance(mean_feature_set,data)
+                 minClass = mean[2]
+        result.append(minClass) 
+    return result 
+	
