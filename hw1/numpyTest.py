@@ -19,9 +19,14 @@ for data in train_data_1:
 		sumClass2[1] += data[1]
 		countClass2+=1
 print(sumClass1/countClass1)
+a = (1==1,0)
+a = np.array([[1,2,3] ,
+      [4,5,6]]) 
+b= 2 
+print(a[b==1,0])
 print(sumClass2/countClass2)
-mean_class1 = np.append(sumClass1/countClass1,[1]) 
-mean_class2 = np.append(sumClass2/countClass2,[2])
+mean_class1 = sumClass1/countClass1 
+mean_class2 = sumClass2/countClass2
 mean_sample = np.array([mean_class1,mean_class2])
 print(mean_sample)
-plotDecBoundaries(train_data_1,train_labels,mean_sample)
+plotDecBoundaries(train_data_1[:,[0,1]],train_labels,mean_sample)
