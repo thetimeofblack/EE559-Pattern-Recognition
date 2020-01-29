@@ -1,10 +1,15 @@
 import numpy as np 
 from python3.plotDecBoundaries import plotDecBoundaries
 from tools.nearest_centroid_classifier import *
+
+
+
 train_data = np.genfromtxt('python3/synthetic2_train.csv',delimiter=',')
 test_data =  np.genfromtxt('python3/synthetic2_test.csv',delimiter = ',')
 #train_data_2 = np.genfromtxt('python3/synthetic2_train.csv', delimiter = ',')
 #print(train_data_1)
+
+
 
 sumClass1 = np.array([0,0])
 sumClass2 = np.array([0,0])
@@ -14,6 +19,8 @@ train_labels = []
 test_labels = [] 
 for data in train_data:
     train_labels.append(data[2])
+for data in test_data:
+    test_labels.append(data[2])
 
 for data in train_data:
 	if data[2] == 1 : 
@@ -37,13 +44,7 @@ for data in test_data_unlabelled:
 	else:
 		estimate_labels.append(1)
 
-#print(sumClass2/countClass2)
-#print(train_labels)
-print("Test result")
-print(estimate_labels)
-
-print(test_data[:,[2]])
-#print(mean_sample)
+errorrate = computeErrorRate(estimate_labels,test_labels) 
 plotDecBoundaries(train_data[:,[0,1]],train_labels,mean_sample)
 
 
