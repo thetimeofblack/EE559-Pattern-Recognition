@@ -1,6 +1,16 @@
 import numpy as np 
 from python3.plotDecBoundaries import plotDecBoundaries
 from tools.nearest_centroid_classifier import *
+def computeErrorRate(labelset1, labelset2):
+    LabelCount = 0 
+    ErrorCount = 0
+    for i in range(len(labelset1)):
+        if(labelset1[i]!=labelset2[i]):
+            ErrorCount+=1
+        LabelCount+=1
+    result = ErrorCount/LabelCount
+    print("The error rate: ",result,"  The total test data:  ",LabelCount)
+    return result
 
 
 

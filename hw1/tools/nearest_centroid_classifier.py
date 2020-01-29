@@ -37,6 +37,13 @@ def getLabels(dataset,labelset):
         labelset.append(data[13])
 
 
+def model_train(data_set, mean_set):
+    sum = 0
+    count = 0
+    for data in data_set:
+        sum+= data
+        count+= 1
+    mean_set.append(sum/count)
 
 
     
