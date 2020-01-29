@@ -40,7 +40,7 @@ def plotDecBoundaries(training, label_train, sample_mean):
     # decision boundary image that is used as the plot background.
     image_size = x.shape
     xy = np.hstack( (x.reshape(x.shape[0]*x.shape[1], 1, order='F'), y.reshape(y.shape[0]*y.shape[1], 1, order='F')) ) # make (x,y) pairs as a bunch of row vectors.
-
+    print(xy)
     # distance measure evaluations for each (x,y) pair.
     dist_mat = cdist(xy, sample_mean)
     pred_label = np.argmin(dist_mat, axis=1)
