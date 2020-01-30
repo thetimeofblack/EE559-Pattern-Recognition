@@ -1,5 +1,11 @@
 import numpy as np
 from math import *
+
+
+def __init__(self):
+    print("This nearest_centroid_classifier")
+
+
 def computeVectorEuclideanDistance(v1 ,v2):
     sum = 0
     difference =np.array(v1) -np.array(v2)
@@ -95,4 +101,21 @@ def classify_with_two_feature(dataset=[[0,0]]):
 
 def model_validation(test_dataset, mean_set,f1,f2,errorrate):
     test_dataset = []
-    
+
+
+def searchFeature(train_data_set, test_Data_set, feature1, feature2):
+    mean_set_label1 = train_classifer_label(train_data_set, 1, feature1, feature2)
+    mean_set_label2 = train_classifer_label(train_data_set, 2, feature1, feature2)
+    mean_set_label3 = train_classifer_label(train_data_set, 3, feature1, feature2)
+    sample_mean_set_unlabelled = np.array([mean_set_label1, mean_set_label2, mean_set_label3])
+
+    mean_set_label1 = np.append(mean_set_label1, 1)
+    mean_set_label2 = np.append(mean_set_label2, 2)
+    mean_set_label3 = np.append(mean_set_label3, 3)
+
+    sample_mean_set = [mean_set_label1, mean_set_label2, mean_set_label3]
+    estimate_label_set = nearest_classifier(train_data_set, sample_mean_set, feature1, feature2)
+    train_data_labels = getLabels(train_data_set)
+    TrainDataErrorRate = computeErrorRate(estimate_label_set, train_data_labels)
+
+    return TrainDataErrorRate,sample_mean_set_unlabelled
