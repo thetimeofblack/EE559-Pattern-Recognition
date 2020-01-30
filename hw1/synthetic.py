@@ -4,8 +4,8 @@ from tools.nearest_centroid_classifier import *
 
 
 
-train_data = np.genfromtxt('python3/synthetic1_train.csv',delimiter=',')
-test_data =  np.genfromtxt('python3/synthetic1_test.csv',delimiter = ',')
+train_data = np.genfromtxt('python3/synthetic2_train.csv',delimiter=',')
+test_data =  np.genfromtxt('python3/synthetic2_test.csv',delimiter = ',')
 #train_data_2 = np.genfromtxt('python3/synthetic2_train.csv', delimiter = ',')
 #print(train_data_1)
 
@@ -45,8 +45,8 @@ for data in test_data_unlabelled:
 		estimate_labels.append(1)
 
 errorrate = computeErrorRate(estimate_labels,test_labels)
-train_data_plot = train_data[:,[0,1]]
-plotDecBoundaries(train_data[:,[0,1]],train_labels,mean_sample)
+train_data_plot = test_data[:,[0,1]]
+plotDecBoundaries(test_data[:,[0,1]],test_labels,mean_sample)
 
 
 

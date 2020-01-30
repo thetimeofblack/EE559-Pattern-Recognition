@@ -45,10 +45,11 @@ def computeErrorRate(labelset1, labelset2):
     return result
 
 
-def getLabels(dataset,labelset):
+def getLabels(dataset):
+    labelset = []
     for data in dataset:
-        labelset.append(data[13])
-
+         labelset=np.append(labelset,data[13])
+    return labelset
 # input data_set you can select 2 features
 # return the mean vector
 def train_classifier(data_set,f1 ,f2):
