@@ -1,21 +1,11 @@
 import numpy as np 
 from python3.plotDecBoundaries import plotDecBoundaries
 from tools.nearest_centroid_classifier import *
-def computeErrorRate(labelset1, labelset2):
-    LabelCount = 0 
-    ErrorCount = 0
-    for i in range(len(labelset1)):
-        if(labelset1[i]!=labelset2[i]):
-            ErrorCount+=1
-        LabelCount+=1
-    result = ErrorCount/LabelCount
-    print("The error rate: ",result,"  The total test data:  ",LabelCount)
-    return result
 
 
 
-train_data = np.genfromtxt('python3/synthetic2_train.csv',delimiter=',')
-test_data =  np.genfromtxt('python3/synthetic2_test.csv',delimiter = ',')
+train_data = np.genfromtxt('python3/synthetic1_train.csv',delimiter=',')
+test_data =  np.genfromtxt('python3/synthetic1_test.csv',delimiter = ',')
 #train_data_2 = np.genfromtxt('python3/synthetic2_train.csv', delimiter = ',')
 #print(train_data_1)
 
@@ -28,9 +18,9 @@ countClass2 = 0
 train_labels = []
 test_labels = [] 
 for data in train_data:
-    train_labels.append(data[2])
+    train_labels = np.append(train_labels,data[2])
 for data in test_data:
-    test_labels.append(data[2])
+    test_labels = np.append(test_labels,data[2])
 
 for data in train_data:
 	if data[2] == 1 : 
@@ -54,8 +44,11 @@ for data in test_data_unlabelled:
 	else:
 		estimate_labels.append(1)
 
-errorrate = computeErrorRate(estimate_labels,test_labels) 
-plotDecBoundaries(train_data[:,[0,1]],train_labels,mean_sample)
+errorrate = computeErrorRate(estimate_labels,test_labels)
+train_data_plot = train_data[:,[0,1]]
+print(train_data_plot[train_labels==1,0])
+print(train_labels)
+plotDecBoundaries(test_data[:,[0,1]],test_labels,mean_sample)
 
 
 
