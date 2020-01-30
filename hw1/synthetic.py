@@ -46,9 +46,7 @@ for data in test_data_unlabelled:
 
 errorrate = computeErrorRate(estimate_labels,test_labels)
 train_data_plot = train_data[:,[0,1]]
-print(train_data_plot[train_labels==1,0])
-print(train_labels)
-plotDecBoundaries(test_data[:,[0,1]],test_labels,mean_sample)
+plotDecBoundaries(train_data[:,[0,1]],train_labels,mean_sample)
 
 
 
