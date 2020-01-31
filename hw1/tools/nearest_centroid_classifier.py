@@ -119,3 +119,17 @@ def searchFeature(train_data_set, test_Data_set, feature1, feature2):
     TrainDataErrorRate = computeErrorRate(estimate_label_set, train_data_labels)
 
     return TrainDataErrorRate,sample_mean_set_unlabelled
+
+def findBestFeatureByTrainData(train_data, test_data):
+    for i in range(13):
+        for j in range(i + 1, 13):
+            ErrorRate, sample_mean_set_unlabelled = searchFeature(train_data, test_data, i, j)
+            ErrorRateSet.append(ErrorRate)
+            if minErrorRate > ErrorRate:
+                minErrorRate = ErrorRate
+                minFeature1 = i
+                minFeature2 = j
+                minUnlabelledSampleMean = sample_mean_set_unlabelled
+    print("The most suitable feature")
+    print(minFeature1, minFeature2)
+    plotDecBoundaries(train_data[:,[minFeature1,minFeature2]],train_data_labels,minUnlabelledSampleMean)

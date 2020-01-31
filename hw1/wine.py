@@ -46,6 +46,7 @@ for i in range(13):
 
 print("The most suitable feature")
 print(minFeature1, minFeature2)
+print(min(ErrorRateSet))
 plotDecBoundaries(train_data[:,[minFeature1,minFeature2]],train_data_labels,minUnlabelledSampleMean)
 ''' 
 for i in range(len(train_data)-1):
