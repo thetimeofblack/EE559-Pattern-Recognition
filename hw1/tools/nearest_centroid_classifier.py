@@ -38,6 +38,9 @@ def nearest_classifier(dataset , sample_mean_set, f1,f2):
                 minDistance = computeVectorEuclideanDistance(specificMean,specificData)
         estimated_label_set.append(minClass)
     return estimated_label_set
+def computeErrorRateForDataSet(dataset,sample_mean_set, f1,f2):
+    estimated_label_set = nearest_centroid_classifier(dataset,sample_mean_set,f1,f2)
+
 
 def computeErrorRate(labelset1, labelset2):
     LabelCount = 0 
@@ -118,12 +121,14 @@ def searchFeature(train_data_set, test_Data_set, feature1, feature2):
     train_data_labels = getLabels(train_data_set)
     TrainDataErrorRate = computeErrorRate(estimate_label_set, train_data_labels)
 
-    return TrainDataErrorRate,sample_mean_set_unlabelled
+    return TrainDataErrorRate,sample_mean_set_unlabelled ,sample_mean_set
 
 def findBestFeatureByTrainData(train_data, test_data):
+    ErrorRateSet = []
+    train_data_labels = getLabels(train_data)
     for i in range(13):
         for j in range(i + 1, 13):
-            ErrorRate, sample_mean_set_unlabelled = searchFeature(train_data, test_data, i, j)
+            ErrorRate, sample_mean_set_unlabelled,sample_mean_set_labelled = searchFeature(train_data, test_data, i, j)
             ErrorRateSet.append(ErrorRate)
             if minErrorRate > ErrorRate:
                 minErrorRate = ErrorRate

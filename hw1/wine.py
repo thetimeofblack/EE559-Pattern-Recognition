@@ -36,7 +36,7 @@ ErrorRateSet = []
 minUnlabelledSampleMean = []
 for i in range(13):
     for j in range(i+1,13):
-        ErrorRate,sample_mean_set_unlabelled = searchFeature(train_data,test_data, i , j)
+        ErrorRate,sample_mean_set_unlabelled , sample_mean_set_labelled = searchFeature(train_data,test_data, i , j)
         ErrorRateSet.append(ErrorRate)
         if minErrorRate > ErrorRate:
             minErrorRate = ErrorRate
@@ -44,9 +44,20 @@ for i in range(13):
             minFeature2 = j
             minUnlabelledSampleMean = sample_mean_set_unlabelled
 
+errormean = 0
+sumerror = 0
+for error in ErrorRateSet:
+    sumerror += error
+variance = 0
+errormean = sumerror/len(ErrorRateSet)
+for error in ErrorRateSet:
+    variance += (error-errormean)*(error-errormean)
+
 print("The most suitable feature")
 print(minFeature1, minFeature2)
 print(min(ErrorRateSet))
+print(errormean)
+print(variance)
 plotDecBoundaries(train_data[:,[minFeature1,minFeature2]],train_data_labels,minUnlabelledSampleMean)
 ''' 
 for i in range(len(train_data)-1):

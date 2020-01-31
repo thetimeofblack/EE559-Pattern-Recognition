@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.19)  30 JAN 2020 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.17)  30 JAN 2020 23:09
 entering extended mode
 **./hw1.tex
 (hw1.tex
@@ -45,14 +45,14 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@width=\dimen104
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
-Package: subcaption 2020/01/03 v1.3b Sub-captions (AR)
+Package: subcaption 2019/09/01 v1.3a Sub-captions (AR)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+Package: caption 2019/10/18 v3.4a Customizing captions (AR)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 61.
+Package: caption3 2019/09/09 v1.8e caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen105
 \captionmargin@=\dimen106
 \captionwidth=\dimen107
@@ -67,104 +67,136 @@ Package caption Info: Standard document class detected.
 )
 \c@subfigure=\count90
 \c@subtable=\count91
-) (hw1.aux
-
-LaTeX Warning: Label `table: errorrate' multiply defined.
-
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.sty"
+\lst@mode=\count92
+\lst@gtempboxa=\box27
+\lst@token=\toks15
+\lst@length=\count93
+\lst@currlwidth=\dimen112
+\lst@column=\count94
+\lst@pos=\count95
+\lst@lostspace=\dimen113
+\lst@width=\dimen114
+\lst@newlines=\count96
+\lst@lineno=\count97
+\lst@maxwidth=\dimen115
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
+\lst@framebox=\box28
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+ (hw1.aux)
 \openout1 = `hw1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
- ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen112
-\scratchbox=\box27
-\nofMPsegments=\count93
-\nofMParguments=\count94
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen113
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count100
+\scratchdimen=\dimen116
+\scratchbox=\box29
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen117
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks17
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2019-12-09 v2.10 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count106
 <images/synthetic_trian1.png, id=1, 462.528pt x 346.896pt>
 File: images/synthetic_trian1.png Graphic file (type png)
 <use images/synthetic_trian1.png>
-Package pdftex.def Info: images/synthetic_trian1.png  used on input line 12.
+Package pdftex.def Info: images/synthetic_trian1.png  used on input line 13.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
 <images/synthetic_test1.png, id=3, 462.528pt x 346.896pt>
 File: images/synthetic_test1.png Graphic file (type png)
 <use images/synthetic_test1.png>
-Package pdftex.def Info: images/synthetic_test1.png  used on input line 17.
+Package pdftex.def Info: images/synthetic_test1.png  used on input line 18.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
 <images/synthetic_train2.png, id=4, 462.528pt x 346.896pt>
 File: images/synthetic_train2.png Graphic file (type png)
 <use images/synthetic_train2.png>
-Package pdftex.def Info: images/synthetic_train2.png  used on input line 22.
+Package pdftex.def Info: images/synthetic_train2.png  used on input line 23.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
 <images/synthetic_test2.png, id=5, 462.528pt x 346.896pt>
 File: images/synthetic_test2.png Graphic file (type png)
 <use images/synthetic_test2.png>
-Package pdftex.def Info: images/synthetic_test2.png  used on input line 27.
+Package pdftex.def Info: images/synthetic_test2.png  used on input line 28.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 33.
+(Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 33.
+(Font)              <5> on input line 34.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--46
+Underfull \hbox (badness 10000) in paragraph at lines 11--47
 
  []
 
 [1
 
 {C:/Users/11914/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/sy
-nthetic_trian1.png>]
-<images/wine_feature01_train.png, id=14, 462.528pt x 346.896pt>
+nthetic_trian1.png>] [2 <./images/synthetic_test1.png>]
+<images/wine_feature01_train.png, id=18, 462.528pt x 346.896pt>
 File: images/wine_feature01_train.png Graphic file (type png)
 <use images/wine_feature01_train.png>
-Package pdftex.def Info: images/wine_feature01_train.png  used on input line 50
+Package pdftex.def Info: images/wine_feature01_train.png  used on input line 51
 .
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
- [2 <./images/synthetic_test1.png>] [3 <./images/synthetic_train2.png>] [4 <./i
-mages/synthetic_test2.png>] [5 <./images/wine_feature01_train.png>] (hw1.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \hbox (9.6118pt too wide) in paragraph at lines 59--71
+ [] 
+ []
 
+<images/best_features_wine.png, id=19, 462.528pt x 346.896pt>
+File: images/best_features_wine.png Graphic file (type png)
+<use images/best_features_wine.png>
+Package pdftex.def Info: images/best_features_wine.png  used on input line 76.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+[3 <./images/synthetic_train2.png>] [4 <./images/synthetic_test2.png>] [5 <./im
+ages/wine_feature01_train.png>] [6 <./images/best_features_wine.png>] (hw1.aux)
  ) 
 Here is how much of TeX's memory you used:
- 2199 strings out of 492449
- 34852 string characters out of 3129736
- 104814 words of memory out of 3000000
- 6596 multiletter control sequences out of 15000+200000
+ 3527 strings out of 492449
+ 53716 string characters out of 3129736
+ 118395 words of memory out of 3000000
+ 7911 multiletter control sequences out of 15000+200000
  5196 words of font info for 19 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,8n,46p,412b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,8n,46p,924b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on hw1.pdf (5 pages, 134911 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on hw1.pdf (6 pages, 166712 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
