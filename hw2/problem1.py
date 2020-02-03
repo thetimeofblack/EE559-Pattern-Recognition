@@ -5,6 +5,14 @@ import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist
 import matplotlib.patches as mpatches
 
+def G12(x):
+    return np.array(-x[0]- x[1] +5)
+def G13(x):
+    return np.array(-x[0]+3)
+def G23(x):
+    return np.array(-x[0]+x[1]-1)
+
+
 def judgeClassOne(pixel):
     return 0
 def judgeClassTwo(pixel):
@@ -48,14 +56,11 @@ for pixel in xy :
 pred_label = np.array(pred_label)
 decisionmap = pred_label.reshape(image_size,order='F')
 print(decisionmap)
-plt.legend(( '[4,1] Class 1' , '[1,5] Class 2' , '[0,0] Class 3') , loc = 3)
+
 plt.imshow(decisionmap, extent = [xrange[0],xrange[1],yrange[0],yrange[1]], origin = 'lower' )
 plt.plot(4,1 , 'rx')
 plt.plot(1,5 , 'go')
 plt.plot(0,0 , 'b*')
 plt.legend(( '[4,1] Class 1' , '[1,5] Class 2' , '[0,0] Class 3') , loc = 3)
-plt.gca().add_artist(l)
-yellow_patch = mpatches.Patch(color='yello',label = 'Class One Region')
-plt.legend(handles=[yellow_patch])
-
+plt.plot()
 plt.show()
