@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist
 
-def plotDecBoundaries(training, label_train, sample_mean):
+def plotDecBoundaries(training, caption,label_train, sample_mean):
 
     #Plot the decision boundaries and data points for minimum distance to
     #class mean classifier
@@ -77,7 +77,7 @@ def plotDecBoundaries(training, label_train, sample_mean):
         l1 = plt.legend([m1,m2], ['Class 1 Mean', 'Class 2 Mean'], loc=4)
 
     plt.gca().add_artist(l1)
-
+    plt.title(caption)
     plt.show()
 
 

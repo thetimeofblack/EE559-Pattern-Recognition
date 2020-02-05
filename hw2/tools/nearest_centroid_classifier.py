@@ -67,8 +67,7 @@ def nearest_classifier(dataset , sample_mean_set, f1,f2):
                 minDistance = computeVectorEuclideanDistance(specificMean,specificData)
         estimated_label_set.append(minClass)
     return estimated_label_set
-def computeErrorRateForDataSet(dataset,sample_mean_set, f1,f2):
-    estimated_label_set = nearest_centroid_classifier(dataset,sample_mean_set,f1,f2)
+
 
 
 def computeErrorRate(labelset1, labelset2):
